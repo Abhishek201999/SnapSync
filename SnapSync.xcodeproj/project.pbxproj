@@ -7,18 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15336F2B2CDFCD20003B557B /* RealmStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15336F2A2CDFCD20003B557B /* RealmStorageService.swift */; };
+		15336F2D2CDFCDEF003B557B /* RealmImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15336F2C2CDFCDEF003B557B /* RealmImageModel.swift */; };
 		15A8508D2CDF543E00815474 /* SnapSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8508C2CDF543E00815474 /* SnapSyncApp.swift */; };
-		15A8508F2CDF543E00815474 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8508E2CDF543E00815474 /* ContentView.swift */; };
 		15A850912CDF543F00815474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A850902CDF543F00815474 /* Assets.xcassets */; };
 		15A850942CDF543F00815474 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A850932CDF543F00815474 /* Preview Assets.xcassets */; };
+		15A850A02CDF5F1200815474 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8509C2CDF5F1100815474 /* CameraPreview.swift */; };
+		15A850A12CDF5F1200815474 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8509D2CDF5F1200815474 /* CameraViewModel.swift */; };
+		15A850A32CDF5F1200815474 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A8509F2CDF5F1200815474 /* CameraManager.swift */; };
+		15A850A52CDF5F3B00815474 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A850A42CDF5F3B00815474 /* ContentView.swift */; };
+		15A850A72CDF69C100815474 /* SavedImagesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A850A62CDF69C100815474 /* SavedImagesScreen.swift */; };
+		15A850AE2CDF75A400815474 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A850AD2CDF75A400815474 /* ImageModel.swift */; };
+		15A850B12CDF793B00815474 /* ImageStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A850B02CDF793B00815474 /* ImageStorageService.swift */; };
+		15E4C2842CE068DB00A71F54 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 15E4C2832CE068DB00A71F54 /* RealmSwift */; };
+		15E4C2852CE06A5B00A71F54 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 15E4C2832CE068DB00A71F54 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		15E4C2872CE06DFB00A71F54 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4C2862CE06DFB00A71F54 /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1522B5932CE064CC00AE00D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				15E4C2852CE06A5B00A71F54 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		15336F2A2CDFCD20003B557B /* RealmStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorageService.swift; sourceTree = "<group>"; };
+		15336F2C2CDFCDEF003B557B /* RealmImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmImageModel.swift; sourceTree = "<group>"; };
 		15A850892CDF543E00815474 /* SnapSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A8508C2CDF543E00815474 /* SnapSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapSyncApp.swift; sourceTree = "<group>"; };
-		15A8508E2CDF543E00815474 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		15A850902CDF543F00815474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15A850932CDF543F00815474 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15A8509C2CDF5F1100815474 /* CameraPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		15A8509D2CDF5F1200815474 /* CameraViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		15A8509F2CDF5F1200815474 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		15A850A42CDF5F3B00815474 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../CameraApp/CustomCameraApp/ContentView.swift; sourceTree = "<group>"; };
+		15A850A62CDF69C100815474 /* SavedImagesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedImagesScreen.swift; sourceTree = "<group>"; };
+		15A850AD2CDF75A400815474 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		15A850B02CDF793B00815474 /* ImageStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorageService.swift; sourceTree = "<group>"; };
+		15E4C2862CE06DFB00A71F54 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15E4C2842CE068DB00A71F54 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +86,14 @@
 		15A8508B2CDF543E00815474 /* SnapSync */ = {
 			isa = PBXGroup;
 			children = (
+				15A850AF2CDF790800815474 /* LocalStorage */,
+				15A8509F2CDF5F1200815474 /* CameraManager.swift */,
+				15A8509C2CDF5F1100815474 /* CameraPreview.swift */,
+				15A8509D2CDF5F1200815474 /* CameraViewModel.swift */,
+				15A850A42CDF5F3B00815474 /* ContentView.swift */,
 				15A8508C2CDF543E00815474 /* SnapSyncApp.swift */,
-				15A8508E2CDF543E00815474 /* ContentView.swift */,
+				15A850A62CDF69C100815474 /* SavedImagesScreen.swift */,
+				15E4C2862CE06DFB00A71F54 /* ImageUploader.swift */,
 				15A850902CDF543F00815474 /* Assets.xcassets */,
 				15A850922CDF543F00815474 /* Preview Content */,
 			);
@@ -67,6 +108,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		15A850AF2CDF790800815474 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				15A850AD2CDF75A400815474 /* ImageModel.swift */,
+				15A850B02CDF793B00815474 /* ImageStorageService.swift */,
+				15336F2A2CDFCD20003B557B /* RealmStorageService.swift */,
+				15336F2C2CDFCDEF003B557B /* RealmImageModel.swift */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,12 +129,16 @@
 				15A850852CDF543E00815474 /* Sources */,
 				15A850862CDF543E00815474 /* Frameworks */,
 				15A850872CDF543E00815474 /* Resources */,
+				1522B5932CE064CC00AE00D8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SnapSync;
+			packageProductDependencies = (
+				15E4C2832CE068DB00A71F54 /* RealmSwift */,
+			);
 			productName = SnapSync;
 			productReference = 15A850892CDF543E00815474 /* SnapSync.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 15A850802CDF543E00815474;
+			packageReferences = (
+				15E4C2822CE068DB00A71F54 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 15A8508A2CDF543E00815474 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15A8508F2CDF543E00815474 /* ContentView.swift in Sources */,
 				15A8508D2CDF543E00815474 /* SnapSyncApp.swift in Sources */,
+				15A850A52CDF5F3B00815474 /* ContentView.swift in Sources */,
+				15A850A02CDF5F1200815474 /* CameraPreview.swift in Sources */,
+				15E4C2872CE06DFB00A71F54 /* ImageUploader.swift in Sources */,
+				15336F2D2CDFCDEF003B557B /* RealmImageModel.swift in Sources */,
+				15A850A12CDF5F1200815474 /* CameraViewModel.swift in Sources */,
+				15336F2B2CDFCD20003B557B /* RealmStorageService.swift in Sources */,
+				15A850A32CDF5F1200815474 /* CameraManager.swift in Sources */,
+				15A850B12CDF793B00815474 /* ImageStorageService.swift in Sources */,
+				15A850A72CDF69C100815474 /* SavedImagesScreen.swift in Sources */,
+				15A850AE2CDF75A400815474 /* ImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,11 +337,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SnapSync/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 373N8KV6UG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "need camera to click picutres";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,8 +356,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.abhi.SnapSync;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.prod.HealthKart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = HealthKartDev;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,11 +371,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SnapSync/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 373N8KV6UG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "need camera to click picutres";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,8 +390,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.abhi.SnapSync;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.prod.HealthKart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = HealthKartDev;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +422,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		15E4C2822CE068DB00A71F54 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.54.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15E4C2832CE068DB00A71F54 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15E4C2822CE068DB00A71F54 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15A850812CDF543E00815474 /* Project object */;
 }
