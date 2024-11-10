@@ -4,14 +4,6 @@ import RealmSwift
 
 class RealmStorageService: ImageStorageService {
     
-//    static let shared: RealmStorageService = {
-//        do {
-//            return try RealmStorageService()
-//        } catch {
-//            fatalError("Failed to initialize Realm: \(error)")
-//        }
-//    }()
-    
     private var realm: Realm
     
     init() throws {
@@ -39,5 +31,20 @@ class RealmStorageService: ImageStorageService {
         let realImageModels = realm.objects(RealmImageModel.self)
         let imageModels = realImageModels.map{$0.toImageModel()}
         return .success(Array(imageModels))
+    }
+    
+    func updateImageStatus(imageID: String, status: String) -> Result<Bool, ImageStorageError> {
+        do {
+            if let image = realm.objects(RealmImageModel.self).filter("id == %@", imageID).first {
+                try realm.write {
+                    image.uploadStatus = status
+                }
+                return .success(true)
+            } else {
+                return .failure(.imageNotFound)
+            }
+        } catch {
+            return .failure(.updateFailed)
+        }
     }
 }

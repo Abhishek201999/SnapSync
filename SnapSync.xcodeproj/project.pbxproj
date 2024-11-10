@@ -22,6 +22,7 @@
 		15E4C2842CE068DB00A71F54 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 15E4C2832CE068DB00A71F54 /* RealmSwift */; };
 		15E4C2852CE06A5B00A71F54 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 15E4C2832CE068DB00A71F54 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		15E4C2872CE06DFB00A71F54 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4C2862CE06DFB00A71F54 /* ImageUploader.swift */; };
+		15E4C28B2CE07EFA00A71F54 /* SavedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4C28A2CE07EFA00A71F54 /* SavedImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		15A850AD2CDF75A400815474 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		15A850B02CDF793B00815474 /* ImageStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorageService.swift; sourceTree = "<group>"; };
 		15E4C2862CE06DFB00A71F54 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		15E4C28A2CE07EFA00A71F54 /* SavedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +88,11 @@
 		15A8508B2CDF543E00815474 /* SnapSync */ = {
 			isa = PBXGroup;
 			children = (
+				15E4C28D2CE0838200A71F54 /* SavedImagePage */,
+				15E4C28C2CE0836600A71F54 /* Camera */,
 				15A850AF2CDF790800815474 /* LocalStorage */,
-				15A8509F2CDF5F1200815474 /* CameraManager.swift */,
-				15A8509C2CDF5F1100815474 /* CameraPreview.swift */,
-				15A8509D2CDF5F1200815474 /* CameraViewModel.swift */,
 				15A850A42CDF5F3B00815474 /* ContentView.swift */,
 				15A8508C2CDF543E00815474 /* SnapSyncApp.swift */,
-				15A850A62CDF69C100815474 /* SavedImagesScreen.swift */,
-				15E4C2862CE06DFB00A71F54 /* ImageUploader.swift */,
 				15A850902CDF543F00815474 /* Assets.xcassets */,
 				15A850922CDF543F00815474 /* Preview Content */,
 			);
@@ -117,6 +116,26 @@
 				15336F2C2CDFCDEF003B557B /* RealmImageModel.swift */,
 			);
 			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		15E4C28C2CE0836600A71F54 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				15A8509F2CDF5F1200815474 /* CameraManager.swift */,
+				15A8509C2CDF5F1100815474 /* CameraPreview.swift */,
+				15A8509D2CDF5F1200815474 /* CameraViewModel.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		15E4C28D2CE0838200A71F54 /* SavedImagePage */ = {
+			isa = PBXGroup;
+			children = (
+				15E4C28A2CE07EFA00A71F54 /* SavedImageViewModel.swift */,
+				15A850A62CDF69C100815474 /* SavedImagesScreen.swift */,
+				15E4C2862CE06DFB00A71F54 /* ImageUploader.swift */,
+			);
+			path = SavedImagePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +225,7 @@
 				15A850A32CDF5F1200815474 /* CameraManager.swift in Sources */,
 				15A850B12CDF793B00815474 /* ImageStorageService.swift in Sources */,
 				15A850A72CDF69C100815474 /* SavedImagesScreen.swift in Sources */,
+				15E4C28B2CE07EFA00A71F54 /* SavedImageViewModel.swift in Sources */,
 				15A850AE2CDF75A400815474 /* ImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

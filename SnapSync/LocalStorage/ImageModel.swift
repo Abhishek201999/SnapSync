@@ -10,7 +10,7 @@ class ImageModel: Identifiable {
     var captureDate: Date = Date()
     var uploadStatus: String
     
-    init(id: String = UUID().uuidString, uri: String, name: String, captureDate: Date, uploadStatus: String="Pending") {
+    init(id: String = UUID().uuidString, uri: String, name: String, captureDate: Date, uploadStatus: String="pending") {
         self.id = id
         self.uri = uri
         self.name = name

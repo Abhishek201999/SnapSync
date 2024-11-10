@@ -7,14 +7,14 @@ class RealmImageModel: Object, Identifiable {
     @objc dynamic var uri: String = ""
     @objc dynamic var name: String = ""
     @objc dynamic var captureDate: Date = Date()
-    @objc dynamic var uploadStatus: String = "Pending" // "Pending", "Uploading", "Completed"
+    @objc dynamic var uploadStatus: String = "pending"
     
     override static func primaryKey() -> String? {
         return "id"
     }
     
     // Use a convenience initializer
-    convenience init(id: String = UUID().uuidString, uri: String, name: String, captureDate: Date, uploadStatus: String = "Pending") {
+    convenience init(id: String = UUID().uuidString, uri: String, name: String, captureDate: Date, uploadStatus: String = "pending") {
         self.init() // Call the base initializer
         self.id = id
         self.uri = uri
